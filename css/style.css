@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+body {
+    background: url(../images/background.jpeg);
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    border-bottom: 2px solid;
+    border-color: #cccccc;
+}
+
+footer {
+    height: 60px;
+    background-color: #666666;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 7px solid;
+    border-color: #4aaaa5;
+}
+
+.header-container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.body-container {
+    height: 490px;
+    width: 960px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: 0.1px solid;
+    border-color: #dddddd;
+}
+
+.body-container-pictures {
+    height: 750px;
+    width: 960px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: 0.1px solid;
+    border-color: #dddddd;
+}
+
+.body-inner-container {
+    margin: 25px;
+}
+
+
+.item {
+    display: inline-block;
+}
+
+.body-inner-pictures {
+    width: 60%;
+}
+
+.image {
+    float: left;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    bottom: 50px;
+    width: 225px;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    font-size: 20px;
+
+}
+
+.spacer-sm {
+    height: 100px;
+}
+
+h1 {
+    padding: 30px;
+    background-color: #4aaaa5;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    color: #ffffff;
+}
+
+h2 {
+    padding: 10px 0px 25px 0px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    color: #4aaaa5;
+    border-bottom: 3px solid;
+    border-color: #dddddd;
+}
+
+h4 {
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    margin: 10px 0px 7px 0px;
+    color: #777777
+}
+
+h6 {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 35px;
+}
+
+img {
+    margin: 25px 25px 25px 0px;
+    float: left;
+}
+
+p {
+    margin-top: 25px;
+    line-height: 25px;
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+nav {
+    float: right;
+}
+
+li {
+    padding: 30px;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #777777;
+}
+
+input, textarea {
+    width: 98.5%;
+    padding: 5px;
+    color: #777777;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #4aaaa5;
+    margin-top: 15px;
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    border: 0;
+}
+
+@media screen and (max-width: 980px) {
+    h1 {
+        margin-left: 50px;
+    }
+
+    .header-container {
+        margin: 0 auto;
+    }
+    .items {
+        margin-right: 50px;
+    }
+
+    img {
+        height: 125px;
+        width: 175px;
+    }
+
+    .body-container {
+        width: 550px;
+        margin-left: 50px;
+    }
+
+    .body-container-pictures {
+        width: 450px;
+        height: 620px;
+        margin-left: 50px;
+    }
+
+    .body-inner-container {
+        width: 90%;
+    }
+
+    .inner-container-content {
+        line-height: 23px;
+        font-size: 14px;
+    }
+    .banner {
+        position: absolute;
+        bottom: 40px;
+        width: 175px;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        background-color: #4aaaa5;
+        color: #ffffff;
+        font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-left: 2%;
+    }
+
+    .header-container {
+        margin: 0 auto;
+    }
+    .items {
+        margin-right: 21%;
+    }
+
+    img {
+        height: 175px;
+        width: 250px;
+    }
+
+    .body-container {
+        width: 95%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    .inner-container-content {
+        line-height: 23px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        margin-left: 30%;
+    }
+
+    header {
+        width: 100%;
+        background-color: #4aaaa5;
+        margin: 0 auto;
+    }
+
+    .header-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .items {
+        background-color: #ffffff;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    img {
+        width: 95%;
+        height: 350px;
+        float: none;
+        padding: 0px 2.5%;
+    }
+
+    .body-container {
+        width: 95%;
+        height: 50%;
+        margin: 0 auto;
+        margin-bottom: 25%;
+        margin-top: 100px;
+    }
+
+    .inner-container-content {
+        line-height: 23px;
+        font-size: 14px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
